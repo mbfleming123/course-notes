@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>JavaScript Syntax</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>JavaScript Syntax</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Syntax</h2>
+
+        <p><strong>Syntax</strong> is a set of rules which define how a computer language should be written.</p>
+      </section>
+
+
+      <section>
+        <h2>Comments</h2>
+
+        <p>Multi-line comments are enclosed with slashes and stars (like in CSS).</p>
+
+        <pre class="code">/* This comment<br/>&nbsp;&nbsp;&nbsp;appears on<br/>&nbsp;&nbsp;&nbsp;three lines. */</pre>
+
+        <p>Single-line comments are preceded by a double slash.</p>
+
+        <pre class="code">// Comments may appear at the start of a line or...<br/><br/>var color = "blue";     // ...after a piece of code.</pre>
+      </section>
+
+
+      <section>
+        <h2>Case Sensitivity</h2>
+
+        <p>JavaScript is case sensitive.</p>
+
+        <p><code>myCat</code> is not the same as <code>mycat</code> or <code>MYCAT</code>.</p>
+      </section>
+
+
+      <section>
+        <h2>Semicolon</h2>
+
+        <p>A semicolon (<code>;</code>) is used to end each statement.</p>
+
+        <p><code>x = 3 + 2;</code></p>
+
+        <p>Omission of a semicolon may result in an error.</p>
+      </section>
+
+
+      <section>
+        <h2>Quotes</h2>
+
+        <p>Quotes (single or double) distinguish strings from variables, functions, keywords and reserved words.</p>
+
+        <p><code>'Hello!'</code> is a string.</p>
+
+        <p><code>"Hello, world!"</code> is also a string.</p>
+
+        <p><code>helloWorld</code> is not a string. <small>(It may be a variable or function.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Parentheses</h2>
+
+        <p>Parentheses indicate an argument to a statement, function or method. They are also used to change the order of operations in arithmetic expressions.</p>
+
+        <p><code>document.write("Hello!");</code></p>
+
+        <p><code>var solution = ((4 + 76) / 3);</code></p>
+      </section>
+
+
+      <section>
+        <h2>Curly Braces</h2>
+
+        <p>Curly braces (<code>{ }</code>) group statements into compound statements or "blocks" such as functions or dependent statements.</p>
+
+        <pre class="code">var x = 2;<br/>if (x == 2) {<br/>  document.write("the variable x holds");<br/>  document.write(x);<br/>};</pre>
+      </section>
+
+
+      <section>
+        <h2>Period</h2>
+
+        <p>A period or "dot" (and word following) is used to denote a property or method of an object.</p>
+
+        <pre class="code">document.write("hello");<br/>// the method "write" is of the object "document"</pre>
+      </section>
+
+
+      <section>
+        <h2>Reserved words</h2>
+
+        <p>All programming languages have reserved words which describe built-in functions, objects, properties, methods, etc.</p>
+
+        <p>For example: <code>break</code>. <code>else</code>, <code>for</code>, <code>if</code> and <code>while</code> are among the reserved words in JavaScript.</p>
+
+        <p>These words cannot be used to declare variables, functions, methods, etc.</p>
+
+        <p>Once you are "fluent" in a programming language, these words become familiar. Until then, you may need to refer to resource for a list of reserved words.</p>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords">Mozilla Developers Network: JavaScript Reserved Words</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+    </footer>
+  </body>
+</html>

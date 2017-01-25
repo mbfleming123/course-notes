@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Variables</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Variables</h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Variables</h2>
+
+        <p>Variables are containers which hold data.</p>
+
+        <p>They have no value until one is assigned to it.</p>
+
+        <p>A variable must have a unique name.</p>
+
+        <p>We can refer to a variable to retrieve its value.</p>
+      </section>
+
+
+      <section>
+        <h2>Declaring Variables</h2>
+
+        <p>When we declare a variable, we preface the variable name it with <code>var</code>.</p>
+
+        <p>Once a variable has been created, we do not need to include <code>var</code> in future references.</p>
+      </section>
+
+
+      <section>
+        <h2>Examples</h2>
+
+        <pre class="code">var myCat;<br/>var myBoyCat = "Flynn";<br/>var myGirlCat = "Quorra";</pre>
+
+        <pre class="code">myCat;      // empty!<br/>myBoyCat;   // "Flynn"<br/>myGirlCat;  // "Quorra"</pre>
+      </section>
+
+
+      <section>
+        <h2>Naming Variables</h2>
+
+        <ul>
+          <li>must start with a letter, dollar sign (<code>$</code>) or underscore (<code>_</code>)</li>
+          <li>may not contain a dash (<code>-</code>) or period (<code>.</code>)</li>
+          <li>are case sensitive</li>
+          <li>should be descriptive</li>
+          <li>should be written in camelCase <sup>*</sup> (<code>var lowerCapsCaps;</code>)</li>
+          <li>may not contain keywords or reserved words</li>
+        </ul>
+
+        <p><small>* underscores between words are acceptable, but camelCase is preferred JavaScript style</small></p>
+      </section>
+
+
+      <section>
+        <h2>Constants</h2>
+
+        <p>If we know a variable's value will not (and/or should not change), we can identify it as a constant.</p>
+
+        <p><code>var PI = 3.14;</code></p>
+
+        <p><small>Here's the catch; ES6 introduces a formal way to declare a constant (<code>const</code>). A browser you code for may not yet recognize ES6. In the meantime, break the camelCase convention; write out constants using UPPERCASE characters. The language will not enforce your constant, but <em>you</em> will know the 'variable' should not be altered.</small></p>
+      </section>
+    </main>
+    
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Working with Data Types</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Working with Data Types</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Operators</h2>
+
+        <p>Data by itself is useless. We must be able to act on the data to process it.</p>
+
+        <p>We can do this in a most basic form using operators</p>
+
+        <ul>
+          <li>assignment</li>
+          <li>arithmetic</li>
+          <li>string</li>
+          <li>comparison</li>
+          <li>logical</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Assignment</h2>
+
+        <p>The assignment operator (<code>=</code>) assigns a value to a variable.</p>
+
+        <pre class="code">var room = 3032;<br/>room;</pre>
+      </section>
+
+
+      <section>
+        <h2>Arithmetic</h2>
+
+        <p>These should be quite familiar:</p>
+
+        <ul>
+          <li>addition (<code>+</code>)</li>
+          <li>subtraction (<code>-</code>)</li>
+          <li>multiplication (<code>*</code>)</li>
+          <li>division (<code>/</code>)</li>
+        </ul>
+
+        <p>These may not be:</p>
+
+        <ul>
+          <li>modulo (<code>%</code>)</li>
+          <li>increment (<code>++</code>)</li>
+          <li>decrement (<code>--</code>)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Order of Operation</h2>
+
+        <p>Programming has mathematical roots, so calculations follow Algebra's order of operation (multiplication and division before addition and subtraction).</p>
+
+        <p>If you need to change this, enclose the calculation in parentheses ( <code>( )</code> ).</p>
+
+        <pre class="code">20 + 30 * 10     // 320<br/>(20 + 30) * 10   // 500</pre>
+      </section>
+
+
+      <section>
+        <h2>Modulo</h2>
+
+        <p>The modulo (<code>%</code>) operator divides two values and returns the remainder.</p>
+
+        <pre class="code">10 % 3  // 1</pre>
+
+        <p><small>(Modulo can be helpful in trying to determine whether something is even or odd or a multiple of X.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Increment</h2>
+
+        <p>The increment (<code>++</code>) operator adds one to the current number.</p>
+
+        <pre class="code">var i = 99;<br/>i++;<br/>i;  // 100</pre>
+
+        <p><small>(Increment is often used in loops which count up.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Decrement</h2>
+
+        <p>The decrement (<code>--</code>) operator subtracts one from the current number.</p>
+
+        <pre class="code">var i = 100;<br/>i--;<br/>i;  // 100</pre>
+
+        <p><small>(Decrement is often used in loops which count down.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Arithmetic &amp; Assignment</h2>
+
+        <p>Arithmetic and assignment operators can be combined, creating a shortcut for modifying values.</p>
+
+        <ul>
+          <li>add and assign (<code>+=</code>)</li>
+          <li>subtract and assign (<code>-=</code>)</li>
+          <li>multiply and assign (<code>*=</code>)</li>
+          <li>divide and assign (<code>/=</code>)</li>
+          <li>modulus and assign (<code>%=</code>)</li>
+        </ul>
+
+        <p><small>(These, too, are often used in loops where each step is greater/less than 1.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Calculate &amp; assign</h2>
+
+        <p>The long way:</p>
+
+        <pre class="code">var x = 2;<br/>x = x * 2;<br/>x;</pre>
+
+        <p>The short way:</p>
+
+        <pre class="code">var x = 2;<br/>x *= 2;<br/>x;</pre>
+
+        <p>As you can see, these work the same way; use is a matter of choice.</p>
+      </section>
+
+
+      <section>
+        <h2>String</h2>
+
+        <p>The concatenation (<code>+</code>) operator to combines strings.</p>
+
+        <pre class="code">"Hello " + "world!"  // Hello, world!</pre>
+
+        <p><small>(Uh, didn't we use <code>+</code> to add numbers?)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Strings &amp; Numbers</h2>
+
+        <p>JavaScript is an <em>untyped</em> language, which means we never have to explicitly say what our data is. JavaScript knows <code>3</code> is a number and <code>"3"</code> is a string.</p>
+
+        <p>Let's prove this:</p>
+
+        <pre class="code">typeof 3;    // number!<br/>typeof "3";  // string!</pre>
+      </section>
+
+
+      <section>
+        <h2>Numbers as strings</h2>
+
+        <p>If we enclose numbers in quotes, JavaScript will treat them as strings.</p>
+
+        <pre class="code">"1" + "2"  // "12"</pre>
+
+        <p>If we concatenate a number with a string, the number becomes part of the string.</p>
+
+        <pre class="code">2008 + " Florida Gators"  // "2008 Florida Gators"</pre>
+
+        <p>Try these!</p>
+
+        <pre class="code">"10" - "5"  // ?!<br/>"10" * "5"  // ?!?!</pre>
+
+        <p><small>(Just one example why JavaScript is regarded as quirky.)</small></p>
+      </section>
+
+
+      <section>
+        <h2>Strings are not numbers</h2>
+
+        <p>If we 'calculate' strings, the result is <code>NaN</code> or "Not a Number."</p>
+
+        <pre class="code">"ten" - "five"  // NaN</pre>
+      </section>
+
+
+      <section>
+        <h2>Comparison</h2>
+
+        <p>Comparison operators are used when our code makes decisions or loops.</p>
+
+        <p>When one value is compared to another, the return value is <code>true</code> or <code>false</code>.</p>
+
+        <ul>
+          <li>greater than (<code>&gt;</code>)</li>
+          <li>greater than or equal to (<code>&gt;=</code>)</li>
+          <li>less than (<code>&lt;</code>)</li>
+          <li>less than or equal to (<code>&lt;=</code>)</li>
+          <li>equal to (<code>==</code>)</li>
+          <li>not equal to (<code>!=</code>)</li>
+          <li>strict equal to (<code>===</code>)</li>
+          <li>strict not equal to (<code>!==</code>)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Strict or Not?</h2>
+
+        <p>Using strict equal to (===) or strict not equal to (!==) compares the value and data type.</p>
+
+        <pre class="code">"10" === 10    // false<br/>"10" !== "10"  // false<br/>10 === 10      // true</pre>
+      </section>
+
+
+      <section>
+        <h2>Logical</h2>
+
+        <p>Logical operators are used when our code makes decisions or loops.</p>
+
+        <p>Logical operators compare expressions and return <code>true</code> or <code>false</code> values.</p>
+
+        <ul>
+          <li>and (<code>&amp;&amp;</code>)</li>
+          <li>or (<code>||</code>)</li>
+          <li>not (<code>!</code>)</li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>and</h2>
+
+        <p>Both expressions/values must evaluate to true to return a true value.</p>
+
+        <pre class="code">true &amp;&amp; true    // true<br/>true &amp;&amp; false   // false<br/>false &amp;&amp; true   // false<br/>false &amp;&amp; false  // false</pre>
+      </section>
+
+
+      <section>
+        <h2>or</h2>
+
+        <p>One expression/value must evaluate to true to return a true value.</p>
+
+        <pre class="code">true || true    // true<br/>true || false   // true<br/>false || true   // true<br/>false || false  // false</pre>
+      </section>
+
+
+      <section>
+        <h2>not</h2>
+
+        <p>The opposite value is returned</p>
+
+        <pre class="code">!true   // false<br/>!false  // true</pre>
+      </section>
+    </main>
+    
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+    </footer>
+  </body>
+</html>
