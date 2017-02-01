@@ -279,6 +279,21 @@
 
         <pre class="code">var animals = ["cat", "dog", "fish"];<br/>animals.join(",");   <span>// "cat,dog,fish"</span><br/>animals.join(" - "); <span>// "cat - dog - fish"</span></pre>
       </section>
+
+
+      <section>
+        <h2>Method Chaining</h2>
+
+        <p>It's not necessary to use one method at a time. We can do what is called method chaining -- using the output from one method and feeding it right into another.</p>
+
+        <p>A step-by-step example:</p>
+
+        <pre class="code">var array = "Cats Dogs Fish".split(" ");<br/><span>// ["Cats", "Dogs", "Fish"]</span><br/>array.join(", ");<br/><span>// "Cats, Dogs, Fish"</span></pre>
+
+        <p>Through method chaninging:</p>
+
+        <pre class="code">var array = "Cats Dogs Fish".split(" ").join(", ");<br/><span>// "Cats, Dogs, Fish"</span></pre>
+      </section>
     </main>
 
     <footer>
