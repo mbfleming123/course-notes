@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Objects, part 1</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Objects, part 1</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Objects</h2>
+
+        <p>An object is a collection of properties and methods.</p>
+      </section>
+
+
+      <section>
+        <h2>Properties</h2>
+
+        <p>A property describes a characteristic of an object and stores a value. Property values may be any data type.</p>
+
+        <p>You may hear the term "key" and "value" to describe the components of a property.</p>
+      </section>
+
+
+      <section>
+        <h2>Methods</h2>
+
+        <p>A method is an action performed on a data type.</p>
+
+        <p><small>We will break down methods in detail in the next section. After we learn functions control flow and loops, we will be able to create our own methods!</small></p>
+      </section>
+
+
+      <section>
+        <h2>How can we describe a cat?</h2>
+
+        <img src="img/09-quorra.jpg" alt="Quorra" class="resized" />
+      </section>
+
+
+      <section>
+        <h2>Cats</h2>
+
+        <p>A cat has the following properties:</p>
+
+        <ul>
+          <li>species</li>
+          <li>name</li>
+          <li>age</li>
+          <li>a long or short coat</li>
+          <li>four paws</li>
+          <li>different colors</li>
+          <li>personality
+            <ul>
+              <li>shy?</li>
+              <li>friendly?</li>
+              <li>bites?</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+
+      <section>
+        <h2>Let's describe Quorra</h2>
+
+        <pre class="code">var quorra = {<br/>  species: "cat",<br/>  age: 5,<br/>  paws: 4,<br/>  coat: "short",<br/>  colors: ["brown", "gray", "black", "white"],<br/>  shy: true,<br/>  friendly: true,<br/>  bites: false<br/>}</pre>
+      </section>
+
+
+      <section>
+        <h2>Creating an Object</h2>
+
+        <p>An array can be created using an <em>object literal</em> or an <em>object constructor</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>Object Literal</h2>
+
+        <p>An object literal uses curly brackets (<code>{ }</code>) to enclose the key-value pairs. Each pair is separated by a comma. The last value does not require a comma.</p>
+
+        <pre class="code">var car = {<br/>  make: "Chevrolet",<br/>  model: "Camaro",<br/>  year: 2016<br/>}</pre>
+
+        <p><small>Key-value pairs may be on one line, but readability improves by placing each on an individual line.</small></p>
+      </section>
+
+
+      <section>
+        <h2>Object Constructor</h2>
+
+        <p>Values of the object are provided as arguments to a new <code>Object()</code> object. Each key is then appended to the object and the value assigned.</p>
+
+        <pre class="code">var car = new Object();<br/><br/>car.make = "Chevrolet";<br/>car.model = "Camaro";<br/>car.year = 2016;<br/><br/>car; <span>// {make: "Chevrolet", model: "Camaro", year: 2016}</span></pre>
+      </section>
+
+
+      <section>
+        <h2>Accessing Object Properties</h2>
+
+        <p>Objects are not indexed.</p>
+
+        <p>We access an object's property values by using bracket or dot notation.</p>
+      </section>
+
+
+      <section>
+        <h2>Bracket Notation</h2>
+
+        <pre class="code">car["make"];   <span>// "Chevrolet"</span><br/>car["model"];  <span>// "Camaro"</span><br/>car["year"];   <span>// 2016</span></pre>
+
+        <p>This should look familiar from working with arrays. Instead of using an index value, we refer to the property's 'key' (which should be enclosed in quotes).</p>
+      </section>
+
+
+      <section>
+        <h2>Dot Notation</h2>
+
+        <pre class="code">car["make"];   <span>// "Chevrolet"</span><br/>car["model"];  <span>// "Camaro"</span><br/>car["year"];   <span>// 2016</span></pre>
+      </section>
+
+
+      <section>
+        <h2>Bracket or Dot?</h2>
+
+        <p>As you are learning, practice both.</p>
+
+        <p>After we address methods, you may develop logic behind when to use one and when to use the other.</p>
+      </section>
+
+
+      <section>
+        <h2>Changing Property Values</h2>
+
+        <p>To change a property's value, simply re-assign it a new value (as you would a variable).</p>
+
+        <pre class="code">car["make"] = "Dodge";<br/>car.model = "Challenger";</pre>
+      </section>
+
+
+      <section>
+        <h2>Deleting Properties</h2>
+
+        <p>To delete a property:</p>
+
+        <pre class="code">delete car.make</pre>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Arrays</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Arrays</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Arrays</h2>
+
+        <p>An array stores an ordered list of values. It may contain any data type.</p>
+
+        <p><code>["cat", "dog", "fish"]</code></p>
+        <p><code>[35, 16, 2, 40]</code></p>
+        <p><code>[true, false, false]</code></p>
+        <p><code>["cat", 3, true]</code></p>
+      </section>
+
+
+      <section>
+        <h2>Creating Arrays</h2>
+
+        <p>An array can be created using an <em>array literal</em> or an <em>array constructor</em>.</p>
+      </section>
+
+
+      <section>
+        <h2>Array Literal</h2>
+
+        <p>Values are placed within brackets (<code>[ ]</code>) and separated by commas. The last value does not require a comma.</p>
+
+        <pre class="code">var lieDetector = [true, false, false];</pre>
+
+        <p>Values may also be placed on individual lines.</p>
+
+        <pre class="code">var lieDetector = [<br/>  true,<br/>  false,<br/>  false<br/>];</pre>
+      </section>
+
+
+      <section>
+        <h2>Array Constructor</h2>
+
+        <p>Values of the array are provided as arguments to a new <code>Array()</code> object.</p>
+
+        <pre class="code">var petStore = new Array("cats", "dogs", "fish");</pre>
+
+        <p>As with the array literal, values may be placed on individual lines.</p>
+
+        <pre class="code">var petStore = new Array(<br/>  "cats",<br/>  "dogs",<br/>  "fish"<br/>)</pre>
+
+        <p>If no values are provided to <code>Array()</code>, an empty array will be created.</p>
+
+        <pre class="code">var array = new Array();<br/>array;  <span>// []</span></pre>
+      </section>
+
+
+      <section>
+        <h2>Array Index</h2>
+
+        <p>Arrays are indexed. The index begins at zero (0).</p>
+
+        <p><code>["cats", "dogs", "fish"]</code></p>
+
+        <table>
+          <tr>
+            <th>array item</th>
+            <th>index value</th>
+          </tr>
+
+          <tr>
+            <td>cats</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>dogs</td>
+            <td>1</td>
+          </tr>
+
+          <tr>
+            <td>fish</td>
+            <td>2</td>
+          </tr>
+        </table>
+
+      </section>
+
+
+      <section>
+        <h2>Array Length</h2>
+
+        <p>Since arrays are indexed, we can determine the size of an array with <code>length</code>.</p>
+
+        <pre class="code">var petStore = ["cats", "dogs", "fish"]<br/>petStore.length;  <span>// 3</span></pre>
+      </section>
+
+
+      <section>
+        <h2>Accessing Array Items</h2>
+
+        <p>We can access individual items in an array using bracket notation.</p>
+
+        <pre class="code">var petStore = ["cats", "dogs", "fish"]<br/>petStore[0];  <span>// cats</span><br/>petStore[1];  <span>// dogs</span><br/>petStore[2];  <span>// fish</span></pre>
+      </section>
+
+
+      <section>
+        <h2>Adding Array Items</h2>
+
+        <p>We can also add to an array by specifying the index in which to save a value and assigning the value.</p>
+
+        <pre class="code">var array = [];<br/>array[0] = "Hello";<br/>array[1] = "world";<br/>array; <span>// ["Hello", "world"]</span></pre>
+      </section>
+
+
+      <section>
+        <h2>The last item</h2>
+
+        <p>JavaScript does not provide an elegant way to return the last item of an array using bracket notation. (Some languages actually do!)</p>
+
+        <p>We know how to:</p>
+
+        <ul>
+          <li>determine array length</li>
+          <li>access an item using bracket notation</li>
+          <li>work with basic data types</li>
+        </ul>
+
+        <p>How might we write a statement to select the last item in the <code>petStore</code> array?</p>
+        <!-- petStore[petStore.length - 1]; -->
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Course Notes</a></p>
+    </footer>
+  </body>
+</html>
